@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1 class="logo">
+          <a href="index.html">Alexis Vega</a>
+        </h1>
+        <!-- Hamburger Menu Checkbox -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="aboutMe.html" class="nav-item">About Me</a></li>
+            <li><a href="portfolio.html" class="nav-item">Portfolio</a></li>
+            <li><a href="resume.html" class="nav-item">Resume</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="resume-section">
+      <section class="resume-content">
+        <h1 class="resume-title">My Resume</h1>
+
+        <!-- Download Resume Button -->
+        <section class="resume-download">
+          <a href="AlexisVegaResume.pdf" 
+             download="Alexis_Vega_Resume.pdf" 
+             class="download-btn">Download Resume</a>
+        </section>
+
+        <!-- Instruction for Searching -->
+        <p class="resume-instruction">Press <kbd>Ctrl + F</kbd> to find anything specific in my resume!</p>
+
+        <!-- Resume Preview -->
+        <section class="resume-preview">
+          <iframe src="AlexisVegaResume.pdf" 
+                  title="Alexis Vega's Resume" 
+                  class="resume-iframe"></iframe>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Alexis Vega. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
