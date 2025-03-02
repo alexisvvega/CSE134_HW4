@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me - Alexis Vega</title>
     <link rel="stylesheet" href="contact.css" />
-    <script src="contact.js"></script>
   </head>
 
   <body>
@@ -47,9 +46,8 @@
           </a>
         </address>
 
-        <form action="https://httpbin.org/post" method="POST" id="contact-form">
+        <form action="https://httpbin.org/post" method="POST">
           <input type="hidden" name="possible_bot" value="true">
-          <input type="hidden" name="form-errors" id="form-errors">
 
           <label for="subject">Select Subject:</label>
           <select name="subject" id="subject" required>
@@ -77,11 +75,8 @@
           <label for="message">Your Message:</label>
           <textarea id="message" name="message" rows="5" cols="30" required minlength="10" maxlength="500" pattern="[A-Za-z0-9.,!? ]*"></textarea>
 
-          <div id="error-message" class="error-message"></div>
-          
           <button type="submit">Submit</button>
         </form>
-
       </section>
     </main>
 

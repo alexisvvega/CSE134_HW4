@@ -172,23 +172,6 @@ input, textarea, select, button {
     border-radius: 0.75rem;
     font-size: 1rem;
 }
-.error-message {
-    color: red;
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    margin-bottom: 10px;
-}
-
-.flash {
-    animation: flash 0.3s ease-in-out 2;
-}
-
-@keyframes flash {
-    0%, 100% { background-color: white; }
-    50% { background-color: #ffcccc; } /* Light red flash */
-}
-
 
 /* Invalid Input Styles */
 input:invalid, textarea:invalid {
@@ -222,24 +205,6 @@ button {
 
 button:hover {
     background-color: var(--secondary-color);
-}
-
-/* Style for the error message */
-div#error-message {
-    color: red;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-/* Style for the remaining characters counter */
-#message-info {
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-/* Styling for form field with error */
-input:invalid, textarea:invalid {
-    border-color: red;
 }
 
 /* Footer */
