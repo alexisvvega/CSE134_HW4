@@ -6,6 +6,7 @@
     <title>Contact Me - Alexis Vega</title>
     <link rel="stylesheet" href="contact.css" />
     <script src="contact.js"></script>
+    <script src="toggle.js"></script>
   </head>
 
   <body>
@@ -26,6 +27,12 @@
             <li><a href="portfolio.html" class="nav-item">Portfolio</a></li>
             <li><a href="resume.html" class="nav-item">Resume</a></li>
             <li><a href="contact.html" class="nav-item">Contact</a></li>
+           <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+           <noscript>
+            <p style="color: red;">JavaScript is required to switch themes.</p>
+          </noscript>
+           
+            
           </ul>
         </nav>
       </div>
@@ -79,7 +86,7 @@
 
           <div id="error-message" class="error-message"></div>
           
-          <button type="submit">Submit</button>
+          <button id="submit-button" type="submit">Submit</button>
         </form>
 
       </section>
